@@ -84,6 +84,8 @@
   .value .num{font-size:11px;color:#b9c2ba}
   .value h3{margin:0 0 8px;font-size:26px;font-weight:500;letter-spacing:-.035em}
   .value p{margin:0;color:#bbc2bc;font-size:13px;line-height:1.72}
+  .elevation-strip{background:var(--paper);padding:24px 18px;border-bottom:1px solid var(--line)}
+  .elevation-strip img{width:100%;max-height:90px;object-fit:contain}
   .projects{padding-left:0;padding-right:0}
   .projects-head{padding:0 18px;display:flex;align-items:end;justify-content:space-between;margin-bottom:28px}
   .projects h2{font-family:Georgia,"Times New Roman",serif;font-size:44px;font-weight:400;letter-spacing:-.04em;margin:0}
@@ -129,6 +131,7 @@
     .projects-head{padding:0 34px}
     .values-inner{display:grid;grid-template-columns:1fr 1.5fr;gap:80px}
     .contact-grid{grid-template-columns:1.2fr .8fr}
+    .elevation-strip{padding:30px 34px}
   }
 </style>
 </head>
@@ -156,7 +159,6 @@
   <main id="home">
     <section class="hero">
       <div class="hero-track">
-        <!-- 메인 히어로 슬라이드: 10.jpg, 9.jpg, 15.jpg -->
         <figure class="hero-slide active"><img src="./10.jpg" alt="공원 및 오픈스페이스 조경 투시도"></figure>
         <figure class="hero-slide"><img src="./9.jpg" alt="테라스 및 벤치 외부 휴게공간"></figure>
         <figure class="hero-slide"><img src="./15.jpg" alt="도심형 가든 스케치 투시도"></figure>
@@ -177,7 +179,7 @@
       <p class="ko">좋은 조경은 완성되는 것이 아니라 자라나는 것이라고 생각합니다. STUDIO ID는 장소의 조건을 세심하게 읽고, 식물·재료·사람의 경험이 자연스럽게 이어지는 공간을 만듭니다.</p>
     </section>
 
-    <!-- 중간 와이드 분할 이미지: 12.jpg 마스터플랜 -->
+    <!-- 와이드 마스터플랜 조감도 -->
     <div class="split-image">
       <img src="./12.jpg" alt="단지 마스터플랜 및 경관 계획도">
     </div>
@@ -196,7 +198,12 @@
       </div>
     </section>
 
-    <!-- 프로젝트 카드 섹션: 주요 설계 도면 및 프로젝트 이미지 배치 -->
+    <!-- 수목 입면도 드로잉 띠 배너 -->
+    <div class="elevation-strip">
+      <img src="./11.jpg" alt="수목 입면 및 식재 패턴 드로잉">
+    </div>
+
+    <!-- 프로젝트 카드 섹션 -->
     <section class="projects" id="projects">
       <div class="projects-head">
         <div><div class="section-kicker">Selected Works</div><h2>Projects</h2></div>
@@ -206,6 +213,10 @@
         <article class="card">
           <div class="card-media"><img src="./1.jpg" alt="Gallery Garden 설계 패널"></div>
           <div class="card-meta"><h3>Gallery Garden</h3><span>Residential · Concept</span></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><img src="./2.jpg" alt="수목 식재 입면 및 배식 계획"></div>
+          <div class="card-meta"><h3>Planting Elevation Design</h3><span>Planting · Study</span></div>
         </article>
         <article class="card">
           <div class="card-media"><img src="./6.jpg" alt="복합 단지 조경 마스터플랜"></div>
@@ -238,7 +249,7 @@
       </div>
     </section>
 
-    <!-- 소개 섹션: 수목 실사 3.jpg -->
+    <!-- 스튜디오 소개 섹션 -->
     <section class="about" id="about">
       <div class="about-copy reveal">
         <div class="section-kicker">About Studio ID</div>
